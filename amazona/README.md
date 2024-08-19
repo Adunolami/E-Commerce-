@@ -44,4 +44,11 @@ Create Node.js Server
         2. create 3 columns from image, info and action 
 Create Product Details Screen
     1. fetch product from backend
-    create 3 column for image, info and action
+    2. create 3 column for image, info and action
+
+Create Loading and Message Component
+    1. create loading component 
+    2. use spinner component 
+    3. create message component 
+    4. create utils.js to define getError function
+    

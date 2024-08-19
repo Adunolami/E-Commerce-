@@ -3,7 +3,7 @@ import data from './data.js';
 
 const app = express();  //creating express app (object)
 
-app.get('/api/products/slug/:slug', (req, res) => {        //app object has method has get with two parameters URL(/api/products' and second parameter, function that respond to this api) second parameter is the function that respond to this api when users go to this api we need to return products to the frontend to the user the function accept two parameter (req, res)
+app.get('/api/products', (req, res) => {        //app object has method has get with two parameters URL(/api/products' and second parameter, function that respond to this api) second parameter is the function that respond to this api when users go to this api we need to return products to the frontend to the user the function accept two parameter (req, res)
     res.send(data.products);
 });
 app.get('/api/products/slug/:slug', (req, res) => {
