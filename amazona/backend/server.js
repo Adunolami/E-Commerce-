@@ -13,9 +13,18 @@ app.get('/api/products/slug/:slug', (req, res) => {
     } else {
         res.status(404).send({ message: 'Product Not Found' });
     }      //sending back data .The frontend// copy file data.js to backend and select data not from frontend but backend 
-});     
+});
+
+app.get('/api/products/:id', (req, res) => {
+    const product = data.products.find((x) => x._id === req.params.id);
+    if (product) {
+        res.send(product);
+    } else {
+        res.status(404).send({ message: 'Product Not Found' });
+    }      //sending back data .The frontend// copy file data.js to backend and select data not from frontend but backend 
+});
 
 const port  = process.env.PORT || 5000;          //define port we are going to respond from the backend. process.env.PORT free port but if it does not work we use the default port 5000
 app.listen(port, () => {            //app.listen the sever starts and will be ready for responding to the products 
     console.log(`server at http://localhost:${port}`);
-})      
+})
