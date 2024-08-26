@@ -73,3 +73,21 @@ Complete Cart Screen
     1. click handler for inc/dec item
     2. click handler for remove item
     3. click handler for checkout 
+
+Create Signin Screen
+    1. create Signin Screen
+    2. Add email and password
+    3. Add signin button
+
+Connect to MongoDB Database
+    1. create atlas mongodb database //using cloud database on atlas
+    2. install local mongodb database
+    3. npm install mongoose
+    4. connect to mongodb database
+
+Seed Sample Data
+    1. create Product model
+    2. create User model
+    3. create seed model
+    4. use route in server.js
+    5. seed sample product
