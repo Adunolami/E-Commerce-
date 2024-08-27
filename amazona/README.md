@@ -91,3 +91,80 @@ Seed Sample Data
     3. create seed model
     4. use route in server.js
     5. seed sample product
+
+
+Seed Sample Users
+
+    1. create user model
+    2. seed sample users
+    3. create user routes
+
+Create Signin Backend API
+    1. Create signin api
+    2. npm install jsonwebtoken
+    3. define generateToken
+
+Complete  Signin Screen
+    1. handle submit and local action
+    2. save token in store and local storage
+    3. show user name in header
+
+Create Shipping Screen
+    1. create form inputs
+    2. handle save shipping address
+    3. add checkout wizard bar
+
+Create Sign up Screen
+    1. create input forms
+    2. handle submit
+    3. create backend api
+
+Implement Select Payment Method Screen
+    1. create input forms
+    2. handle submit 
+
+Create Place Order Screen
+    1. show cart items, payment and address
+    2. handle place order action
+    3. create order create api
+
+Implement Place Order Action
+    1. handle place order action
+    2. create order create api
+
+Create Order Screen
+    1. create backend api for order/:id
+    2. fetch order api in frontend
+    3. show order information in 2 columns
+
+Pay Order By Paypal
+    1. generate paypal client id
+    2. create api to return client id
+    3. install react-paypal-js
+    4. use PaypalScriptProvider in index.js
+    5. use usePayPalScriptReducer in Oder Screen
+    6. implement loadPaypalScript funtion
+    7. render paypal button
+    8. implement onApprove payment function
+    9. create pay order api in backend 
+
+Display Order History
+    1. create order screen
+    2. create order screen
+    3. use api in the frontend
+
+Create Profile Screen
+    1. get user info from context
+    2. show user information
+    3. create user update api
+    4. update user info
+
+Publish To Heroku
+    1. create and config node project
+    2. serve build folder in frontend folder
+    3. Create heroku account
+    4. Connect it to github
+    5. Create mongodb atlas database
+    6. Set database connection in heroku env variables 
+    7. Commit and push
+

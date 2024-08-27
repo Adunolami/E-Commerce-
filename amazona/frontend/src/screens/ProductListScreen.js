@@ -13,7 +13,7 @@ import { getError } from '../utils';
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
-      return { ...state, loading: false };
+      return { ...state, loading: true };
     case 'FETCH_SUCCESS':
       return {
         ...state,

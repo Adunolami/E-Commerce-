@@ -1,5 +1,24 @@
 //create an object that returns sample products 
+import bcrypt from 'bcrypt';
+
+const saltRounds = 10;
+
 const data = {
+    users:[
+        {
+            name: 'Titilayo',
+            email: 'abinatitilayo2@gmail.com',
+            password: bcrypt.hashSync('123456', saltRounds),
+            isAdmin: true
+
+        },
+        {
+            name: 'John',
+            email: 'abinatitilayo1@yahoo.com',
+            password: bcrypt.hashSync('123456', saltRounds),
+            isAdmin: false,
+        }
+    ],
     products: [
         {
             // _id: '1',
